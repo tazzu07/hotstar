@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0c111b;
+    /* outline: 2px solid red; */
+}
+
+body {
+    background: #0c111b;
+    /* position: relative; */
+    font-family: poppins;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.nav-bar {
+    width: 7%;
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.nav {
+    width: 7%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* gap: 28px; */
+    align-items: center;
+}
+
+.container {
+    width: 93%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    width: 89%;
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 11px;
+}
+
+.subscribe .btn {
+    cursor: pointer;
+    font-family: inter;
+    font-size: 14px;
+    color: #ffcc75;
+    background-color: rgba(255, 204, 117, .1);
+    margin-left: 3px;
+    border-radius: 9px;
+    border: none;
+    border-color: rgba(255, 204, 117, .1);
+    padding: 5px 7px;
+    transform: scale(1.07);
+    transition: all .3s ease-in-out;
+    transition-property: transform, background-color;
+}
+
+.subscribe .btn:hover {
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
+    transition-property: transform, background-color;
+    color: goldenrod;
+}
+.nav-links{
+    list-style: none;
+    font-size: 23px;
+    text-decoration: none;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+.nav-link  a{
+    color: lightgray;
+    transition: all .3s ease-in-out;
+    transition-property: transform, background-color;
+}
+.nav-link  a:hover{
+    color: white;
+    transform: scale(1.07);
+    transition: all .3s ease-in-out;
+    transition-property: transform, background-color;
+}
+.help-btn {
+    width: 28%;
+    height: 54px;
+    cursor: pointer;
+    font-size: 19px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background: #FFFFFF33;
+    transition-property: transform, background-color;
+    transform: scale(1.02);
+    margin-left: 29px;
+}
+
+.help-btn:hover {
+    transform: scale(1.12);
+    transform: all 3s ease-in-out;
+    transition-property: transform, background-color;
+    background-color: #FFFFFF33;
+
+}
+
+.help-btn i {
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url(image/lootere.webp) no-repeat center center/cover;
+}
+
+.lootere-content {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to right, #0c111b, #0c111b00);
+    z-index: 2;
+    color: lightgray;
+}
+
+.lootere-logo {
+    padding: 0px 22px;
+    background: transparent;
+}
+
+.lootere-logo img {
+    background: transparent;
+}
+
+.lootere-content h2,
+p,
+h3 {
+    background: transparent;
+    padding: 20px;
+}
+
+.lootere-content p {
+    font-size: medium;
+    width: 56%;
+}
+
+.sliders {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.title {
+    color: #fff;
+    opacity: 0.9;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.movie-list {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 150px;
+    height: 85%;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-right: 17px;
+    margin-top: 12px;
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
+    transition-property: transform, background-color;
+}
+
+.card:hover {
+    transition: all .3s ease-in-out;
+    transition-property: transform, background-color;
+    transform: scale(1.12);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sport-card {
+    min-width: 247px;
+    height: 65%;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 17px;
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
+    transition-property: transform, background-color;
+}
+
+.sport-card:hover {
+    transition: all .3s ease-in-out;
+    transition-property: transform, background-color;
+    transform: scale(1.08);
+}
+
+.video-cardcontainer {
+    position: relative;
+    width: 100%;
+    height: 9vw;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+.video-card {
+    position: relative;
+    min-width: calc(100%/5 - 10px);
+    max-width: calc(100%/5 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.video-card-img,
+.card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-video {
+    position: absolute;
+}
+
+.video-card:hover .video-card-img {
+    display: none;
+}
+@media screen and (min-width:443px) and (max-width:530px){
+
+}
+@media screen and (min-width:320px) and (max-width:540px) {
+    .nav{
+        /* width: 100%;
+        height: 80px;
+        position:fixed ;
+        top: 0;
+        left: 0;
+        padding: 0 4%;
+        background: transparent; */
+        z-index: 9;
+        display:flex ;
+        flex-direction: row;
+        align-items: center;
+        background: transparent;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        z-index: 2;
+        padding: 0 10px;
+        
+    }
+    .nav-link{
+        text-decoration: none;
+        margin-left: 20px;
+        text-transform: capitalize;
+        color: #fff;
+        opacity: 0.9;
+    }
+    .subscribe .btn{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .subscribe .btn {
+        font-size: 11px;
+    }
+
+    .banner {
+        height: 46vh;
+    }
+
+    .lootere-logo img {
+        width: 53%;
+    }
+    .lootere-content h2,
+    h3,
+    p {
+        font-size: xx-small;
+        padding: 5px;
+    }
+
+    .lootere-content p {
+        font-size: 8px;
+        /* width: 63%; */
+    }
+
+    .help-btn {
+        width: 51%;
+        height: 25px;
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    .help-btn i {
+        font-size: 9px;
+    }
+    .search-icon input{
+        margin-right: 38px;
+        height: 52px;
+        width: 291px;
+    }
+}
+/* @media screen and (max-width:860px){
+.nav-bar{
+    width: 10%;
+}
+.container{
+    width: 90%;
+} */
+@media screen and (min-width:441px) and (max-width:915px) {
+    .nav-bar {
+        width: 15%;
+      
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    .banner {
+        height: 51vh;
+    }
+
+    .lootere-content h2,
+    h3 {
+        padding: 5px;
+        font-size: xx-small;
+    }
+
+    .help-btn {
+        width: 53%;
+        font-size: 14px;
+        height: 30px;
+        margin-left: 0px;
+    }
+
+    .lootere-logo img {
+        width: 41%;
+    }
+    .lootere-content p {
+        font-size: 11px;
+        width: 71%;
+       
+    }
+    .search-icon input{
+        margin-right: 80px;
+        
+    }
+}
+
+@media screen and (min-width:540px) and (max-width:740px) {
+    .nav-bar {
+        width: 12%;
+        right: 2%;
+    }
+.nav-link{
+    padding-left: 34px;
+}
+    .container {
+        width: 88%;
+    }
+
+    .subscribe .btn {
+        font-size: 13px;
+        margin-left: 40px;
+    }
+    .search-icon input{
+        margin-right: 86px;
+    }
+
+}
+@media screen and (min-width:1000px)  {
+    .banner {
+        height: 81vh;
+    }
+
+}
+@media screen and (min-width:912px) and (max-width:1024px) {
+    .nav-bar {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .banner {
+        height: 42vh;
+    }
+
+    .lootere-content h2,
+    p,
+    h3 {
+        padding: 4px;
+    }
+
+    .lootere-content p {
+        width: 83%;
+    }
+
+    .help-btn {
+        width: 42%;
+    }
+    .search-icon input{
+        margin-right: 120px;
+        
+    }
+}
